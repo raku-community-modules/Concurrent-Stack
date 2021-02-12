@@ -47,15 +47,34 @@ class Concurrent::Stack {
         $!elems != 0
     }
 
-    multi method Seq(Concurrent::Stack:D: --> Seq) {
-        my Node $current = ⚛$!head;
-        gather while $current {
-            take $current.value;
-            $current = $current.next;
+    my class StackIterator does Iterator {
+        has Node $!current is built is required;
+
+        method new(StackIterator: Node $current is raw --> StackIterator:D) {
+            self.bless: :$current
+        }
+
+        method pull-one(StackIterator:D:) is raw {
+            with $!current {
+                LEAVE $!current .= next;
+                $!current.value
+            } else { IterationEnd }
+        }
+
+        method sink-all(StackIterator:D: --> Nil) {
+            $!current := Node;
         }
     }
 
+    multi method iterator(Concurrent::Stack:D: --> Iterator:D) {
+        StackIterator.new: ⚛$!head
+    }
+
+    multi method Seq(Concurrent::Stack:D: --> Seq) {
+        Seq.new: self.iterator
+    }
+
     multi method list(Concurrent::Stack:D: --> List) {
-        self.Seq.list
+        List.from-iterator: self.iterator
     }
 }

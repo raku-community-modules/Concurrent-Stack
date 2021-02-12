@@ -81,6 +81,12 @@ the result of `Bool` to decide whether to `peek` or `pop`, since another
 thread may `pop` in the meantime. Instead, check if `peek` or `pop` return a
 `Failure`.
 
+#### iterator()
+
+Returns an `Iterator` that will iterate to a snapshot of the stack content,
+starting from the stack top. The snapshot is made at the time this method is
+called.
+
 #### Seq()
 
 Returns a `Seq` that will iterate to a snapshot of the stack content,
