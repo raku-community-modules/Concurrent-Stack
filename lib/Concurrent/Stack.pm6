@@ -40,11 +40,11 @@ class Concurrent::Stack {
     }
 
     multi method elems(Concurrent::Stack:D: -->  Int) {
-        $!elems
+        ⚛$!elems
     }
 
     multi method Bool(Concurrent::Stack:D: --> Bool) {
-        $!elems != 0
+        ⚛$!elems != 0
     }
 
     multi method Seq(Concurrent::Stack:D: --> Seq) {
