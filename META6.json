@@ -1,16 +1,25 @@
 {
-  "name": "Concurrent::Stack",
-  "description": "A lock-free concurrent stack data structure.",
-  "version": "1.2",
-  "perl": "6.*",
+  "auth": "zef:raku-community-modules",
   "authors": [
     "Jonathan Worthington <jnthn@jnthn.net>"
   ],
-  "depends": [],
-  "provides": {
-    "Concurrent::Stack": "lib/Concurrent/Stack.pm6"
-  },
-  "resources": [],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "A lock-free concurrent stack data structure",
   "license": "Artistic-2.0",
-  "source-url": "https://github.com/jnthn/p6-concurrent-stack.git"
+  "name": "Concurrent::Stack",
+  "perl": "6.c",
+  "provides": {
+    "Concurrent::Stack": "lib/Concurrent/Stack.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "https://github.com/raku-community-modules/Concurrent-Stack.git",
+  "tags": [
+  ],
+  "test-depends": [
+  ],
+  "version": "1.2"
 }
