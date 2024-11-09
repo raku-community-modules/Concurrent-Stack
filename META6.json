@@ -1,7 +1,7 @@
 {
   "auth": "zef:raku-community-modules",
   "authors": [
-    "Jonathan Worthington <jnthn@jnthn.net>"
+    "Jonathan Worthington"
   ],
   "build-depends": [
   ],
@@ -18,6 +18,8 @@
   ],
   "source-url": "https://github.com/raku-community-modules/Concurrent-Stack.git",
   "tags": [
+    "STACK",
+    "CONCURRENT"
   ],
   "test-depends": [
   ],

@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/lizmat/Concurrent-Stack/actions/workflows/test.yml/badge.svg)](https://github.com/lizmat/Concurrent-Stack/actions)
+[![Actions Status](https://github.com/raku-community-modules/Concurrent-Stack/actions/workflows/linux.yml/badge.svg)](https://github.com/raku-community-modules/Concurrent-Stack/actions) [![Actions Status](https://github.com/raku-community-modules/Concurrent-Stack/actions/workflows/macos.yml/badge.svg)](https://github.com/raku-community-modules/Concurrent-Stack/actions) [![Actions Status](https://github.com/raku-community-modules/Concurrent-Stack/actions/workflows/windows.yml/badge.svg)](https://github.com/raku-community-modules/Concurrent-Stack/actions)
 
 NAME
 ====
@@ -86,7 +86,7 @@ Jonathan Worthington
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2018 - 2024 Raku Community
+Copyright 2018 - 2019 Raku Community
 
 Copyright 2024 Raku Community
 
