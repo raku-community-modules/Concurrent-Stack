@@ -1,4 +1,6 @@
 Revision history for Concurrent-Stack
 
 {{$NEXT}}
+
+1.3  2024-11-09T21:06:39+01:00
     - Initial version as a Raku Community module
